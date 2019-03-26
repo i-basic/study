@@ -10,7 +10,7 @@
 
 <body>
 <h1> show txt php  php   php   php  file</h1>
-<?php include('news.txt');?>
+<?php include('code.txt');?>
 </body>
 
 
