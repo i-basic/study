@@ -6,17 +6,6 @@
 </head> 
 
 <body> 
-<div id="aa"></div> 
-
-<script language="javascript"> 
-var fso, ts, s ; 
-var ForReading = 1; 
-
-fso = new ActiveXObject("Scripting.FileSystemObject"); 
-ts = fso.OpenTextFile("code.txt", ForReading); 
-s = ts.ReadLine(); 
-document.getElementById("aa").innerHTML=s; 
-</script> 
-
+<iframe name="show" id="show" width="500" height="500" src="code.txt"/>
 </body> 
 </html> 
