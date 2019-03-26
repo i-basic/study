@@ -8,10 +8,10 @@
 </head>
 
 
-<body>
-<h1> show txt php  php   php   php  file</h1>
-<?php include('code.txt');?>
-</body>
+<?php
+$contents = @file_get_contents('code.txt');
+echo $contents;
+?>
 
 
 </html>
