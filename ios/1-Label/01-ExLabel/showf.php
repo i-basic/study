@@ -9,8 +9,13 @@
 
 
 <?php
-$contents = @file_get_contents('code.txt');
-echo $contents;
+$.ajax({
+type: "POST",
+url: "code.txt",
+success: function(msg){
+$('#id').txt(msg);
+}
+});
 ?>
 
 
