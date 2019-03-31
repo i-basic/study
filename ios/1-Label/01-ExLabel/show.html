@@ -1,11 +1,75 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+ 
 <title>你好</title> 
 </head> 
 
 <body> 
-<iframe name="show" id="show" width="500" height="500" src="code.txt"/>
+  <iframe name="show" id="show" width="500" height="500" src="code.txt"/>
+  <pre><code>
+    import UIKit
+
+
+
+class ViewController: UIViewController {
+
+    
+
+    private var myImageView: UIImageView!
+
+    
+
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+        
+
+        // UIImageViewを作成する.
+
+        myImageView = UIImageView(frame: CGRectMake(0,0,100,120))
+
+        
+
+        // 表示する画像を設定する.
+
+        let myImage = UIImage(named: "logo.png")
+
+        
+
+        // 画像をUIImageViewに設定する.
+
+        myImageView.image = myImage
+
+        
+
+        // 画像の表示する座標を指定する.
+
+        myImageView.layer.position = CGPoint(x: self.view.bounds.width/2, y: 200.0)
+
+        
+
+        // UIImageViewをViewに追加する.
+
+        self.view.addSubview(myImageView)
+
+    }
+
+    
+
+    override func didReceiveMemoryWarning() {
+
+        super.didReceiveMemoryWarning()
+
+    }
+  </code></pre>
+  
+  
 </body> 
 </html> 
